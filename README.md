@@ -26,6 +26,7 @@ Edit `bot.env` to change bot configuration.
 #### Authentication
 
 - `/auth/users/` `POST`
+
 Register a user with provided credentials.
 Body:
 ```json
@@ -42,7 +43,8 @@ Response:
 }
 
 ```
-- `/auth/jwt/create/` `POST` **login**
+- `/auth/jwt/create/` `POST`
+
 Log in using provided credentials.
 Body:
 ```json
@@ -60,7 +62,9 @@ Response
 ```
 
 #### User activity
+
 - `/api/me/activity/` `GET`
+
 Retrieve activity for currently authenticated user.
 Response:
 ```json
@@ -71,7 +75,9 @@ Response:
 ```
 
 #### Posts and likes
+
 - `/api/posts/create/` `POST`
+
 Add a post.
 Body:
 ```json
@@ -93,6 +99,7 @@ Response:
 ```
 
 - `/api/like/<id>` `POST`
+
 Either add or remove like on a post
 Response (added like):
 ```json
@@ -112,7 +119,9 @@ Response (added like):
 ```
 
 - `/api/posts/posts/?date_from=2020-09-15` `GET`
+
 Filter post by `date_from` and `date_to` creation date.
 
 - `/api/posts/likes/?date_from=2020-09-15` `GET`
+
 Filter likes by `date_from` and `date_to` creation date.
