@@ -7,6 +7,8 @@
 $ pip install poetry
 $ poetry install
 $ poetry run python manage.py test
+$ poetry run python manage.py makemigrations
+$ poetry run python manage.py migrate
 ```
 
 - ##### Usage
